@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Львівські Орли — комплексні вантажні послуги у Львові та Львівській області: демонтаж, монтаж, такелаж, переїзди, доставки, прибирання та вивіз сміття.">
+<meta name="theme-color" content="#111315">
+<title>Львівські Орли — комплексні вантажні послуги</title>
+<style>
+:root{--bg:#101214;--panel:#191d20;--yellow:#ffd000;--white:#f7f7f5;--muted:#c6c8c9;--line:#34393d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#101214ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:900;line-height:1}.eagle{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:#111;font-size:26px}.brand strong{font-size:21px;letter-spacing:.5px}.brand small{display:block;color:var(--yellow);font-size:10px;letter-spacing:1px;margin-top:5px}
+nav{display:flex;gap:22px;font-size:14px;font-weight:700}nav a:hover{color:var(--yellow)}.navcall{font-weight:800;color:var(--yellow);white-space:nowrap}
+.hero{padding:46px 0 38px;background:linear-gradient(90deg,#101214 0%,#101214ee 45%,#10121466 100%),url('hero.png') center/cover no-repeat}
+.hero-inner{max-width:690px}.eyebrow{color:var(--yellow);font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.02;margin:14px 0 18px;font-weight:900;letter-spacing:-1.8px}h1 span{color:var(--yellow)}
+.hero p{font-size:19px;color:#e1e2e2;max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:10px;font-weight:900;background:var(--yellow);color:#111;border:2px solid var(--yellow);cursor:pointer}.btn.secondary{background:transparent;color:var(--white);border-color:#b9bdc0}.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.trust{display:flex;flex-wrap:wrap;gap:18px;margin-top:28px;color:#fff;font-weight:700}.trust span:before{content:"✓";color:var(--yellow);font-size:19px;margin-right:8px}
+section{padding:54px 0}.section-title{font-size:clamp(27px,4vw,38px);line-height:1.1;margin:0 0 10px}.section-lead{color:var(--muted);margin:0 0 28px;max-width:760px}.section-title:before{content:"";display:inline-block;width:5px;height:28px;background:var(--yellow);margin-right:12px;vertical-align:-4px;border-radius:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:22px;min-height:190px}.service .num{color:var(--yellow);font-weight:900;font-size:13px;letter-spacing:1px}.service h3{font-size:20px;margin:9px 0}.service p{color:var(--muted);font-size:14px;margin:0}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}.list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.list li{color:#e6e7e7}.list li:before{content:"✓";color:var(--yellow);font-weight:900;margin-right:10px}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.benefit{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;font-weight:700}.benefit b{display:block;color:var(--yellow);font-size:24px;margin-bottom:7px}
+.pricebox{background:linear-gradient(110deg,#ffd000,#ffb900);color:#111;border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:20px}.pricebox h2{margin:0;font-size:clamp(24px,4vw,34px)}.pricebox p{margin:4px 0 0;font-weight:600}.pricebox .btn{background:#111;color:#fff;border-color:#111;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card,.form-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:25px}.contact-card p{color:var(--muted)}label{display:block;font-size:13px;font-weight:700;margin:12px 0 6px}input,select,textarea{width:100%;padding:13px;border-radius:9px;border:1px solid #454b50;background:#101315;color:white;font:inherit}textarea{min-height:100px;resize:vertical}.form-note{font-size:12px;color:#aeb3b6}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#aeb3b6;font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:850px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}.hero{background:linear-gradient(90deg,#101214 0%,#101214e8 100%),url('hero.png') center/cover}.columns,.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.nav{padding:10px 0}.brand strong{font-size:17px}.eagle{width:40px;height:40px}.navcall{font-size:12px}.hero{padding:38px 0}.hero p{font-size:16px}.grid{grid-template-columns:1fr}.benefits{grid-template-columns:1fr 1fr}.service{min-height:auto}.pricebox{align-items:flex-start;flex-direction:column}.pricebox .btn{width:100%}section{padding:40px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><img src="logo.png" alt="Львівські Орли — логотип" style="width:210px;max-width:42vw;height:auto;object-fit:contain"></a>
+  <nav><a href="#services">Послуги</a><a href="#deliveries">Доставки</a><a href="#advantages">Переваги</a><a href="#about">Про компанію</a><a href="#contacts">Контакти</a></nav>
+  <a class="navcall" href="tel:+380686705445">☎ +38 (068) 670-54-45</a>
+</div></header>
+<main id="home">
+<section class="hero"><div class="wrap"><div class="hero-inner">
+  <div class="eyebrow">Львів та Львівська область · гнучкий графік 24/7</div>
+  <h1>КОМПЛЕКСНІ<br><span>ВАНТАЖНІ ПОСЛУГИ</span></h1>
+  <p>Від демонтажу та такелажу до переїздів, доставок, прибирання й утилізації. Підберемо рішення під ваш запит.</p>
+  <div class="actions"><a class="btn" href="#contacts">Обговорити замовлення</a><a class="btn secondary" href="#services">Переглянути послуги</a></div>
+  <div class="trust"><span>Досвідчена бригада</span><span>Оперативний виїзд</span><span>Оплата за домовленістю</span></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+  <h2 class="section-title">Наші послуги</h2><p class="section-lead">Виконуємо комплекс робіт для приватних клієнтів, офісів, магазинів, складів і комерційних об'єктів.</p>
+  <div class="grid">
+    <article class="service"><div class="num">01 / МОНТАЖНІ РОБОТИ</div><h3>Демонтаж і монтаж</h3><p>Демонтаж, окремі види монтажу, розбирання та збирання конструкцій, каркасних металевих гаражів і меблів.</p></article>
+    <article class="service"><div class="num">02 / ВАНТАЖНІ РОБОТИ</div><h3>Завантаження та розвантаження</h3><p>Вантажно-розвантажувальні роботи, перенесення важких і великогабаритних предметів.</p></article>
+    <article class="service"><div class="num">03 / ТАКЕЛАЖ</div><h3>Такелаж важких вантажів</h3><p>Переміщення важких вантажів із застосуванням такелажних ременів та відповідного оснащення.</p></article>
+    <article class="service"><div class="num">04 / ПЕРЕЇЗДИ</div><h3>Домашні та офісні переїзди</h3><p>Організація квартирних, домашніх і офісних переїздів, перевезення меблів та техніки.</p></article>
+    <article class="service"><div class="num">05 / ПІДБІР ТРАНСПОРТУ</div><h3>Підбір автомобіля</h3><p>Підберемо машину відповідно до типу, габаритів і кількості вантажу.</p></article>
+    <article class="service"><div class="num">06 / ПРИБИРАННЯ</div><h3>Зачистка та прибирання</h3><p>Зачистка приміщень і територій, прибирання після ремонту, очищення горищ і підвалів від мотлоху.</p></article>
+    <article class="service"><div class="num">07 / ВИВІЗ</div><h3>Вивіз сміття</h3><p>Спуск будівельного сміття, вивіз будівельного бою, старих меблів та непотрібних речей.</p></article>
+    <article class="service"><div class="num">08 / УТИЛІЗАЦІЯ</div><h3>Утилізація</h3><p>Організація вивезення та утилізації сміття й старих меблів.</p></article>
+    <article class="service"><div class="num">09 / ДОСТАВКА</div><h3>Доставка вантажів</h3><p>Доставка меблів, техніки, обладнання, будматеріалів та інших вантажів.</p></article>
+  </div>
+</div></section>
+
+<section id="deliveries"><div class="wrap"><h2 class="section-title">Що доставляємо</h2><p class="section-lead">Підбираємо транспорт і формат доставки відповідно до вашого завдання.</p>
+<div class="columns">
+<ul class="list"><li>Меблі та інтер'єрні об'єкти</li><li>Електро- та побутова техніка</li><li>Промислове обладнання</li><li>Автокузовні запчастини й автокомплекти</li><li>Будівельні матеріали</li><li>Сантехніка, електрика та інструменти</li><li>Пиломатеріали й деревина для виробництва</li></ul>
+<ul class="list"><li>Доставка та розвезення по торгових точках</li><li>Товари з магазинів, складів і поштових відділень</li><li>Великогабаритні вантажі</li><li>Огорожі, ворота й металеві конструкції</li><li>Металопрокат і покрівельні матеріали</li><li>Декоративні рослини</li><li>Вивіз сміття, будівельного бою та утилізація</li></ul>
+</div></div></section>
+
+<section id="advantages"><div class="wrap"><h2 class="section-title">Чому обирають «Львівські Орли»</h2><p class="section-lead">Акуратність, чесність, оперативність та індивідуальний підхід до кожного запиту.</p>
+<div class="benefits">
+<div class="benefit"><b>01</b>Великий досвід роботи</div><div class="benefit"><b>02</b>Досвідчені працівники</div><div class="benefit"><b>03</b>Оперативний виїзд бригади</div><div class="benefit"><b>04</b>Контроль якості виконання робіт</div><div class="benefit"><b>05</b>Швидке виконання замовлень</div><div class="benefit"><b>06</b>Вигідні умови співпраці</div><div class="benefit"><b>07</b>Широкий спектр послуг</div><div class="benefit"><b>08</b>Гнучкий графік 24/7</div>
+</div></div></section>
+
+<section id="about"><div class="wrap"><div class="pricebox"><div><h2>Оплата — за домовленістю!</h2><p>Вартість залежить від виду, обсягу та складності робіт.</p></div><a class="btn" href="#contacts">Уточнити вартість</a></div></div></section>
+
+<section id="contacts"><div class="wrap"><h2 class="section-title">Обговорімо ваше замовлення</h2><p class="section-lead">Опишіть завдання — уточнимо деталі та запропонуємо оптимальне рішення.</p>
+<div class="contact-grid"><div class="contact-card"><h3>«Львівські Орли»</h3><p>Комплексні вантажні послуги у Львові та Львівській області.</p><p><strong>Графік:</strong> гнучкий, 24/7 — за попереднім узгодженням.</p><p><a class="btn" href="tel:+380686705445">Подзвонити: 068 670 54 45</a></p><p><a class="btn secondary" href="tel:+380937280227">Подзвонити: 093 728 02 27</a></p><p><strong>Оплата:</strong> за домовленістю.</p><p><strong>Телефони для замовлень:</strong><br><a href="tel:+380686705445" style="color:var(--yellow);font-weight:800">+38 (068) 670-54-45</a><br><a href="tel:+380937280227" style="color:var(--yellow);font-weight:800">+38 (093) 728-02-27</a></p><p><strong>Зателефонуйте</strong> — узгодимо вид робіт, обсяг і вартість.</p></div>
+<form class="form-card" onsubmit="event.preventDefault(); alert('Дякуємо! Щоб одразу оформити замовлення, зателефонуйте: +38 (068) 670-54-45 або +38 (093) 728-02-27. Онлайн-відправлення форми буде підключено окремо.');">
+<h3>Залишити заявку</h3><label for="name">Ваше ім'я</label><input id="name" name="name" placeholder="Як до вас звертатися?" required>
+<label for="phone">Номер телефону</label><input id="phone" name="phone" type="tel" placeholder="+380..." required>
+<label for="service">Яка послуга потрібна?</label><select id="service" name="service"><option>Демонтаж / монтаж</option><option>Вантажні / такелажні роботи</option><option>Переїзд / перевезення</option><option>Доставка вантажу</option><option>Прибирання / вивіз сміття</option><option>Інше</option></select>
+<label for="details">Деталі замовлення</label><textarea id="details" name="details" placeholder="Що потрібно зробити, де та коли?"></textarea>
+<button class="btn" type="submit" style="width:100%;margin-top:14px">Надіслати заявку</button><p class="form-note">Зараз це демонстраційна форма. Для реального надсилання заявок потрібне підключення телефону, WhatsApp або сервісу форм.</p>
+</form></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> «Львівські Орли». Комплексні вантажні послуги.</span><span>Львів та Львівська область · Оплата за домовленістю</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
